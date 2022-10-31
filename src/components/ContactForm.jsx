@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './App.module.css';
 
 const ContactForm = ({ formSubmit }) => {
@@ -33,3 +34,7 @@ const ContactForm = ({ formSubmit }) => {
 };
 
 export default ContactForm;
+
+ContactForm.propTypes = {
+  formSubmit: PropTypes.func.isRequired,
+};

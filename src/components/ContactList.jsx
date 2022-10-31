@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './App.module.css';
 
 const ContactList = ({ listFilter, listDelete }) => {
@@ -21,3 +22,8 @@ const ContactList = ({ listFilter, listDelete }) => {
 };
 
 export default ContactList;
+
+ContactList.propTypes = {
+  listFilter: PropTypes.func,
+  listDelete: PropTypes.func,
+};

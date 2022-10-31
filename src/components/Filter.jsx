@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './App.module.css';
 
 const Filter = ({ inputChange }) => {
@@ -10,3 +11,7 @@ const Filter = ({ inputChange }) => {
 };
 
 export default Filter;
+
+Filter.propTypes = {
+  inputChange: PropTypes.func.isRequired,
+};
